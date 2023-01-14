@@ -5,7 +5,9 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.20742753623188406" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/image_message_rv_item.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/rv_item.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/layout/simple_message_rv_item.xml" value="0.25092592592592594" />
       </map>
     </option>
   </component>
