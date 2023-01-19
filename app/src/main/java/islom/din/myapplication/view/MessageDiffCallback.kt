@@ -1,7 +1,7 @@
-package islom.din.myapplication.multiviewholder.dif_util
+package islom.din.myapplication.view
 
 import androidx.recyclerview.widget.DiffUtil
-import islom.din.myapplication.multiviewholder.data.Message
+import islom.din.myapplication.model.Message
 
 class MessageDiffCallback : DiffUtil.ItemCallback<Message>() {
     override fun areItemsTheSame(
