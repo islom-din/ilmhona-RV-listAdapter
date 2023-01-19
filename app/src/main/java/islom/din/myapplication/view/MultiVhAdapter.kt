@@ -1,4 +1,4 @@
-package islom.din.myapplication.multiviewholder.adapter
+package islom.din.myapplication.view
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import islom.din.myapplication.R
-import islom.din.myapplication.multiviewholder.data.ImageMessage
-import islom.din.myapplication.multiviewholder.data.Message
-import islom.din.myapplication.multiviewholder.data.SimpleMessage
-import islom.din.myapplication.multiviewholder.dif_util.MessageDiffCallback
+import islom.din.myapplication.model.ImageMessage
+import islom.din.myapplication.model.Message
+import islom.din.myapplication.model.SimpleMessage
 import java.lang.RuntimeException
 
 class MultiVhAdapter : ListAdapter<Message, RecyclerView.ViewHolder>(
