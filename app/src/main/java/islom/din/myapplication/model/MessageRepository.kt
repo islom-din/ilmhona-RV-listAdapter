@@ -7,122 +7,146 @@ class MessageRepository {
         Message(
             id = 1,
             simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
-            imageMessage = null
+            imageMessage = null,
+            videoMessage = null
         ),
         Message(
             id = 2,
+            imageMessage = ImageMessage(imageRes = R.drawable.hobbit),
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            videoMessage = null
         ),
         Message(
             id = 3,
-            simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+            videoMessage = VideoMessage(videoPath = R.raw.video_2),
+            simpleMessage = null,
             imageMessage = null
         ),
         Message(
             id = 4,
             simpleMessage = SimpleMessage(message = "Hello proSkills message"),
-            imageMessage = null
+            imageMessage = null,
+            videoMessage = null
         ),
         Message(
-            id = 5,
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_1),
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            imageMessage = null
         ),
         Message(
             id = 6,
             simpleMessage = SimpleMessage(message = "Hello world message"),
-            imageMessage = null
+            imageMessage = null,
+            videoMessage = null
         ),
         Message(
             id = 7,
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones),
+            videoMessage = null
         ),
         Message(
-            id = 8,
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_2),
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            imageMessage = null
         ),
         Message(
             id = 1,
             simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
+            imageMessage = null,
+            videoMessage = null
+        ),
+        Message(
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_1),
+            simpleMessage = null,
+            imageMessage = null
+        ),
+        Message(
+            id = 3,
+            simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+            imageMessage = null,
+            videoMessage = null
+        ),
+        Message(
+            id = 4,
+            simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+            imageMessage = null,
+            videoMessage = null
+        ),
+        Message(
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_2),
+            simpleMessage = null,
+            imageMessage = null
+        ),
+        Message(
+            id = 6,
+            simpleMessage = SimpleMessage(message = "Hello world message"),
+            imageMessage = null,
+            videoMessage = null
+        ),
+        Message(
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_1),
+            simpleMessage = null,
+            imageMessage = null
+        ),
+        Message(
+            id = 8,
+            simpleMessage = null,
+            imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings),
+            videoMessage = null
+        ),
+        Message(
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_2),
+            simpleMessage = null,
             imageMessage = null
         ),
         Message(
             id = 2,
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            imageMessage = ImageMessage(imageRes = R.drawable.hobbit),
+            videoMessage = null
         ),
         Message(
             id = 3,
             simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
-            imageMessage = null
+            imageMessage = null,
+            videoMessage = null
         ),
         Message(
-            id = 4,
-            simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+            id = 3,
+            videoMessage = VideoMessage(videoPath = R.raw.video_1),
+            simpleMessage = null,
             imageMessage = null
         ),
         Message(
             id = 5,
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones),
+            videoMessage = null
         ),
         Message(
             id = 6,
             simpleMessage = SimpleMessage(message = "Hello world message"),
-            imageMessage = null
-        ),
-        Message(
-            id = 7,
-            simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
-        ),
-        Message(
-            id = 8,
-            simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
-        ),
-        Message(
-            id = 1,
-            simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
-            imageMessage = null
-        ),
-        Message(
-            id = 2,
-            simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            imageMessage = null,
+            videoMessage = null
         ),
         Message(
             id = 3,
-            simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
-            imageMessage = null
-        ),
-        Message(
-            id = 4,
-            simpleMessage = SimpleMessage(message = "Hello proSkills message"),
-            imageMessage = null
-        ),
-        Message(
-            id = 5,
+            videoMessage = VideoMessage(videoPath = R.raw.video_2),
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
-        ),
-        Message(
-            id = 6,
-            simpleMessage = SimpleMessage(message = "Hello world message"),
             imageMessage = null
-        ),
-        Message(
-            id = 7,
-            simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
         ),
         Message(
             id = 8,
             simpleMessage = null,
-            imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings),
+            videoMessage = null
         ),
     )
 
