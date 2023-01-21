@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import islom.din.myapplication.R
+import islom.din.myapplication.model.Users
 import islom.din.myapplication.viewmodel.MyViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManger
 
         val adapter = MultiVhAdapter()
-        adapter.submitList(viewModel.getNewData())
+        adapter.submitList(viewModel.getNewData() as List<Users>?)
         recyclerView.adapter = adapter
     }
 }
