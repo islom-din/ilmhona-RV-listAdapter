@@ -12,13 +12,13 @@ import java.lang.RuntimeException
 
 
 class ViewHolders(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun configure(simpleMessage: SimpleMessage?) {
+    private fun configure(simpleMessage: SimpleMessage?) {
     val titleView: TextView = itemView.findViewById(R.id.text_view)
         titleView.text = simpleMessage?.message
     }
 
-    fun configure(imageMessage: ImageMessage?) {
-    val imageView: ImageView = itemView.findViewById(R.id.image_view)
+    private fun configure(imageMessage: ImageMessage?) {
+    val  imageView: ImageView = itemView.findViewById(R.id.image_view)
         if (imageMessage == null) {
             throw RuntimeException("image Message cannot be null if there's created Image VH")
         }
@@ -57,6 +57,7 @@ class ViewHolders(itemView: View) : RecyclerView.ViewHolder(itemView) {
             is Users.User22 -> bindUsers22(users)
             is SimpleMessage ->configure(users)
             is ImageMessage-> configure(users)
+
         }
     }
 }
