@@ -8,15 +8,21 @@ import islom.din.myapplication.multiviewholder.adapter.MultiVhAdapter
 import islom.din.myapplication.multiviewholder.data.ImageMessage
 import islom.din.myapplication.multiviewholder.data.Message
 import islom.din.myapplication.multiviewholder.data.SimpleMessage
+import islom.din.myapplication.multiviewholder.shodmon.adapter.CountryAdapter
+import islom.din.myapplication.multiviewholder.shodmon.viewModel.MyVewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
 
+    private lateinit var countryViewHolder: CountryAdapter
+    private val myViewHolder = MyVewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         recyclerView = findViewById(R.id.recycler_view)
+        countryViewHolder = CountryAdapter()
 
         val layoutManger = LinearLayoutManager(
             this,
@@ -25,9 +31,11 @@ class MainActivity : AppCompatActivity() {
         )
         recyclerView.layoutManager = layoutManger
 
-        val adapter = MultiVhAdapter()
-        adapter.submitList(getNewData())
-        recyclerView.adapter = adapter
+//        val adapter = MultiVhAdapter()
+//        adapter.submitList(getNewData())
+//        recyclerView.adapter = adapter
+        countryViewHolder.submitList(myViewHolder.getData())
+        recyclerView.adapter = countryViewHolder
     }
 
     private fun getNewData() : MutableList<Message> {
