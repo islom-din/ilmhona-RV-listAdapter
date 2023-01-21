@@ -17,6 +17,7 @@ class MyVewModel {
         items.add(Message(5, null, ImageMessage(R.drawable.pizza_001_copy)))
         items.add(Message(6, SimpleMessage("Mother Russia"), null))
         items.add(Message(5, null, ImageMessage(R.drawable.pizza_002)))
+        items.add(Message(6, SimpleMessage("The other world"), null))
 
 
         return items
