@@ -1,20 +1,19 @@
-package islom.din.myapplication
+package islom.view
 
 import androidx.recyclerview.widget.DiffUtil
+import islom.model.Message
 
-//NEW
-// step 3
-class ItemDiffCallback : DiffUtil.ItemCallback<MyString>() {
+class MessageDiffCallback : DiffUtil.ItemCallback<Message>() {
     override fun areItemsTheSame(
-        oldItem: MyString,
-        newItem: MyString
+        oldItem: Message,
+        newItem: Message
     ): Boolean {
         return oldItem.id == newItem.id
     }
 
     override fun areContentsTheSame(
-        oldItem: MyString,
-        newItem: MyString
+        oldItem: Message,
+        newItem: Message
     ): Boolean {
         return oldItem == newItem
     }
