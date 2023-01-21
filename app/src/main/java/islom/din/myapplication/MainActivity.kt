@@ -4,18 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import islom.din.myapplication.new_lesson.NewTestAdapter
-
-// step 1
-
-//NEW
-data class MyString(
-    val id: Int,
-    val string: String,
-    var isSelected: Boolean = false
-)
-// объект этого класса - item
-// id и string - content
+import islom.din.myapplication.multiviewholder.adapter.MultiVhAdapter
+import islom.din.myapplication.multiviewholder.data.ImageMessage
+import islom.din.myapplication.multiviewholder.data.Message
+import islom.din.myapplication.multiviewholder.data.SimpleMessage
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,28 +25,174 @@ class MainActivity : AppCompatActivity() {
         )
         recyclerView.layoutManager = layoutManger
 
-        val adapter = NewTestAdapter()
-        adapter.onItemClick = { index: Int ->
-            adapter.submitList(getNewData(index))
-        }
+        val adapter = MultiVhAdapter()
         adapter.submitList(getNewData())
         recyclerView.adapter = adapter
     }
 
-    fun getNewData(indexOfSelectedElement: Int? = null) : MutableList<MyString> {
+    private fun getNewData() : MutableList<Message> {
         val newList = mutableListOf(
-            MyString(1,"Hello world"),
-            MyString(2,"Orif"),
-            MyString(3,"Qosim"),
-            MyString(4, "Alisher"),
-            MyString(5, "Behruz"),
-            MyString(6, "Tehronshoh"),
+            Message(
+                id = 1,
+                simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
+                imageMessage = null
+            ),
+            Message(
+                id = 2,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            ),
+            Message(
+                id = 3,
+                simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+                imageMessage = null
+            ),
+            Message(
+                id = 4,
+                simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 5,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 6,
+                simpleMessage = SimpleMessage(message = "Hello world message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 7,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 8,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            ),
+            Message(
+                id = 1,
+                simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
+                imageMessage = null
+            ),
+            Message(
+                id = 2,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            ),
+            Message(
+                id = 3,
+                simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+                imageMessage = null
+            ),
+            Message(
+                id = 4,
+                simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 5,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 6,
+                simpleMessage = SimpleMessage(message = "Hello world message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 7,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 8,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            ),
+            Message(
+                id = 1,
+                simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
+                imageMessage = null
+            ),
+            Message(
+                id = 2,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            ),
+            Message(
+                id = 3,
+                simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+                imageMessage = null
+            ),
+            Message(
+                id = 4,
+                simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 5,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 6,
+                simpleMessage = SimpleMessage(message = "Hello world message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 7,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 8,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            ),
+            Message(
+                id = 1,
+                simpleMessage = SimpleMessage(message = "Не спи на уроке )"),
+                imageMessage = null
+            ),
+            Message(
+                id = 2,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.hobbit)
+            ),
+            Message(
+                id = 3,
+                simpleMessage = SimpleMessage(message = "Do not sleep!!!"),
+                imageMessage = null
+            ),
+            Message(
+                id = 4,
+                simpleMessage = SimpleMessage(message = "Hello proSkills message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 5,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 6,
+                simpleMessage = SimpleMessage(message = "Hello world message"),
+                imageMessage = null
+            ),
+            Message(
+                id = 7,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.game_of_thrones)
+            ),
+            Message(
+                id = 8,
+                simpleMessage = null,
+                imageMessage = ImageMessage(imageRes = R.drawable.lord_of_the_rings)
+            ),
         )
-        newList.forEachIndexed { index, myString ->
-            if (index == indexOfSelectedElement) {
-                myString.isSelected = true
-            }
-        }
         return newList
     }
 }
