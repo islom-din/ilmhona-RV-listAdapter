@@ -1,7 +1,9 @@
 package islom.din.myapplication.view
 
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.VideoView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import islom.din.myapplication.R
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             LinearLayoutManager.VERTICAL,
             false
         )
+
         recyclerView.layoutManager = layoutManger
 
         val adapter = MultiVhAdapter()
